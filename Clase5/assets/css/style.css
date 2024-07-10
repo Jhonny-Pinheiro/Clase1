@@ -1,0 +1,33 @@
+h1 {
+    color: #519780;
+    font-size: 16px;
+}
+
+#text{
+    font-size: 34px;
+}
+main {
+    background-color: rgb(206, 206, 195);
+    text-align: center;
+}
+
+#span {
+    color: rgb(60, 21, 235);
+}
+
+#foto{
+    width: 20%;
+}
+#lista {
+    background-color: white;
+    border-style: double;
+    margin-left: 30em;
+    width: 30%;
+    text-align: left;
+}
+
+.footer {
+    text-align: center;
+    background-color: darkslategrey;
+    color: aliceblue;
+}
