@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.button {
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+    background-color: darkgreen;
+}
+
+.card-title {
+    justify-content: center;
+}
+
+footer {
+    background-color:gray;
+    color: ghostwhite;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
