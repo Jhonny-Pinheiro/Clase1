@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+li {
+    
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*width: 50%;*/
+    /*margin-top: 100px;*/
+    border: 1px solid gainsboro;
+    padding: 10px;
+    box-shadow: 3px 3px 3px gainsboro;
+    border-top-right-radius: 18px;
+    border-top-left-radius: 18px;
+}
+
+.botao{
+    margin-top: 10px;
+    background-color: green;
+}
