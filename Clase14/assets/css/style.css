@@ -1,0 +1,31 @@
+.lista {
+    background-color: gainsboro;
+    width: 50%;
+    margin: 0 auto;
+    border: solid;
+    border-radius: 25px;
+    margin-top: 50px;
+}
+
+.table {
+    text-align: center;
+    display: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: gainsboro;
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#titulos{
+    text-align: center;
+    display: flex;
+    margin: 10px;
+}
+
+p {
+    text-align: right;
+}
