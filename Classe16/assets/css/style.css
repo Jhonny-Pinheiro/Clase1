@@ -1,0 +1,17 @@
+* {
+    background-color:darkgrey;
+}
+
+img {
+    width: 200px;
+    height: 300px;
+    border: solid;
+    border-radius: 15px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
