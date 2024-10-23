@@ -1,40 +1,26 @@
-const url = 'https://www.omdbapi.com/?i=tt3896198&apikey=21c66d03&s=batman'
-const card = document.querySelector('.card')
+const url = 'https://www.omdbapi.com/?i=tt3896198&apikey=21c66d03&s='
+const cards = document.querySelector('.cards')
 
-fetch(url)
+const buscar = document.querySelector('.button')
+
+buscar.addEventListener('click', ()=> {
+    const busqueda = document.querySelector('.input2').value
+    console.log(busqueda)
+    fetch(url+busqueda)
     .then(response => response.json())
     .then((data) => {
-        console.log(data.Search[0].Poster)
-        data.Search.forEach((banner) => {
-        console.log(banner)
-        card.insertAdjacentHTML('beforeend',`<img src="${banner.Poster}">`)
-        }
-    )})
-
-
-//un gatito
-/* const url = 'https://api.thecatapi.com/v1/images/search'
-const img = document.querySelector('img')
-
-fetch(url)
-.then(response => response.json())
-.then((data) => {
-    console.log(data[0].url)
-    img.src = data[0].url
-}) */
-
-//todos gatitos
-/* const url = 'https://api.thecatapi.com/v1/images/search?limit=10'
-const card = document.querySelector('.card')
-
-const img = document.querySelector('img')
-
-fetch(url)
-.then(response => response.json())
-.then((data) => {
-    console.log(data[0].url)
-    data.forEach((gato) => {
-        console.log(gato)
-        card.insertAdjacentHTML('beforeend',`<img src="${gato.url}">`)
-    }
-)}) */
+        console.log(data)
+        console.log(data.Search)
+            data.Search.forEach((banner) => {
+            console.log(banner.Poster)
+            cards.insertAdjacentHTML('beforeend',
+                `
+                <div class="card">
+                    <img src="${banner.Poster}">
+                    <p>${banner.Year}</p>
+                </div>
+                `
+            )
+        })
+    })
+})
